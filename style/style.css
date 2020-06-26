@@ -1,9 +1,10 @@
 /* VARIABLES */
 :root {
-  --pink: #fc60a7;
-  --light-blue: #00f3ff;
-  --yellow: #fbff21;
-  --white: #ffffff;
+  --pink: #ffc26c;
+  --light-blue: #e63244;
+  --yellow: #30a900;
+  --white: #e63244;
+  
 }
 
 /*  RESET
@@ -213,6 +214,7 @@ table {
 .tada {
   -webkit-animation-name: tada;
   animation-name: tada;
+  animation-duration: 1s;
 }
 
 @-webkit-keyframes bounceIn {
@@ -337,25 +339,29 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); /* position, top, left, transform in questo modo c'entrano il div*/
   text-align: center;
+  
 }
 
 h1 {
-  font-family: "Bangers", cursive;
-  font-size: 200%;
-  margin-bottom: 20px;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 300%;
+  margin-bottom: 20px; /*distanza dal pulsante*/
   color: var(--light-blue);
 }
 
 button,
 .roulette {
-  font-family: "Fredoka One", cursive;
+ 
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 25px;
 }
 
 .roulette {
   height: 26px;
   color: var(--yellow);
+  
 }
 
 button {
@@ -363,6 +369,8 @@ button {
   padding: 15px;
   margin-top: 40px;
   border: 4px solid var(--yellow);
+  border-radius: 12px;
+
   color: var(--yellow);
 }
 
@@ -379,11 +387,11 @@ button:active {
 }
 
 footer {
-  font-family: "Fredoka One", cursive;
-  font-size: 12px;
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 20px;
   color: var(--white);
   padding-top: 30px;
 }
 .link-to {
-  text-decoration: none;
+  text-decoration: none; /*toglie sottolineatura al link*/
 }
